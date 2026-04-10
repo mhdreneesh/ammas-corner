@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories - Umma's Corner</title>
+  <meta name="description" content="A treasure box of memories and photos.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #FDF0EC;"> <!-- Light blush background for gallery as requested -->
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <i class="fa-solid fa-flower" style="color: var(--primary-rose);"></i>
+        Umma's <span>Corner</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="memories.html" class="active">Memories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="story-hero text-center fade-in"
+    style="background-color: var(--bg-cream); border-bottom: 1px solid var(--border-peach); min-height: 30vh;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 3.2rem;">Our Treasure Box of Memories</h1>
+      <h2 class="hero-subtitle font-accent" style="color: var(--text-charcoal); font-size: 1.8rem;">Every photo tells a
+        story we never want to forget</h2>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="section fade-in">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="festivals">Festivals</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="family">Family Gatherings</button>
+        <button class="filter-btn" data-filter="everyday">Everyday Moments</button>
+      </div>
+
+      <!-- Gallery Grid of 12 items -->
+      <div class="gallery-grid" id="galleryGrid">
+
+        <!-- Item 1 -->
+        <div class="gallery-item" data-category="family">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-09 at 7.38.38 AM (1).jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>EID MUBARAK, 2026</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item" data-category="everyday">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-08 at 7.03.29 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>SCOOTER DELIVERY</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item" data-category="travel">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-08 at 7.02.00 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>Trip to Wayanad</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+
+        <!-- Item 4 -->
+        <div class="gallery-item" data-category="festivals">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-09 at 4.35.50 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>Wedding</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item" data-category="family">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-09 at 7.37.03 AM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>Riyas's Wedding</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item" data-category="everyday">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-08 at 7.02.01 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>Wayanad Times</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="gallery-item" data-category="festivals">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-10 at 8.10.30 AM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>New member</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="gallery-item" data-category="travel">
+          <img class="gallery-item-img" src="assets/WhatsApp Image 2026-04-08 at 7.03.30 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>Three Together</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="gallery-item" data-category="family">
+          <img class="gallery-item-img" src="assets/Gemini_Generated_Image_e65zhhe65zhhe65z.png" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="gallery-item-info">
+            <p>First Steps</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="gallery-item" data-category="everyday">
+          <video class="gallery-item-img" src="assets/WhatsApp Video 2026-04-10 at 8.36.32 AM.mp4"
+            style="object-fit: cover; width: 100%; height: 100%; display: block;" controls muted loop></video>
+          <div class="gallery-item-info">
+            <p>Hanus moments</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="gallery-item" data-category="festivals">
+          <video class="gallery-item-img" src="assets/WhatsApp Video 2026-04-10 at 7.48.12 AM.mp4"
+            style="object-fit: cover; width: 100%; height: 100%; display: block;" controls muted loop></video>
+          <div class="gallery-item-info">
+            <p>Orhan's Steps</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="gallery-item" data-category="family">
+          <video class="gallery-item-img" src="assets/WhatsApp Video 2026-04-10 at 7.47.59 AM.mp4"
+            style="object-fit: cover; width: 100%; height: 100%; display: block;" controls muted loop></video>
+          <div class="gallery-item-info">
+            <p>Throwback to the Hanu's Sunnath</p>
+            <span class="like-btn"><i class="fa-regular fa-heart"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Memories -->
+  <section class="section fade-in"
+    style="background-color: var(--bg-cream); border-top: 1px solid var(--border-peach);">
+    <div class="container">
+      <h2 class="section-title text-center" style="margin-bottom: 50px;">Special Memories</h2>
+
+      <div class="special-memories">
+
+        <!-- Feature 1 -->
+        <div class="special-card">
+          <img class="special-img" src="assets/WhatsApp Image 2026-04-08 at 7.01.59 PM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="special-content">
+            <h3>Our First Family Vacation</h3>
+            <p>The trips were always simple, usually by train, wrapped in the excitement of a new destination. She
+              always packed the best snacks, making the journey just as memorable as the place.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="special-card">
+          <img class="special-img" src="assets/Gemini_Generated_Image_2qlpbl2qlpbl2qlp.png" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="special-content">
+            <h3>The Wedding That Started It All</h3>
+            <p> this reminds us of the young love that built this family. Its hard to believe
+              how much time has passed, but the love is still just as strong.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="special-card">
+          <img class="special-img" src="assets/WhatsApp Image 2026-04-10 at 7.55.48 AM.jpeg" alt="Dummy Image"
+            style="object-fit: cover;">
+          <div class="special-content">
+            <h3>When Our Little Was Born</h3>
+            <p>She held her grandson for the first time with tears in her eyes, saying it felt like experiencing
+              every good thing in the world all over again.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Banner -->
+  <section class="quote-banner fade-in">
+    <div class="container">
+      <blockquote>"Family is not an important thing. It's everything."</blockquote>
+      <cite class="font-accent">â€” Michael J. Fox</cite>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Made for Umma</p>
+      <small>A family tribute website &copy; 2025</small>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
